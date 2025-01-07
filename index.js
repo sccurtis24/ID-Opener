@@ -5,11 +5,11 @@ window.onload = function() {
 function redirectToMap() {
     var code = document.getElementById('codeInput').value;
     if (code.length === 6 && !isNaN(code)) { // Check if the entered code is exactly 6 digits and numeric
-        window.location.href = "https://projects.audioenhancement.com/project/" + code + "/map";
+        window.open ("https://projects.audioenhancement.com/project/" + code + "/map", '_blank');
     } else {
         // If not 6 digits or empty, perform a Google search instead
         if (code.trim() !== "") {
-            window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(code);
+            window.open("https://www.google.com/search?q=" + encodeURIComponent(code), "_blank");
         }
     }
 }
@@ -23,11 +23,11 @@ function handleKeyPress(event) {
 function openBOM() {
     var code = document.getElementById('codeInput').value;
     if (code.length === 6 && !isNaN(code)) { // Check if the entered code is exactly 6 digits and numeric
-        window.location.href = "https://projects.audioenhancement.com/project/" + code + "/bom";
+        window.open("https://projects.audioenhancement.com/project/" + code + "/bom", "_blank");
     } else {
         // If not 6 digits or empty, perform a Google search instead
         if (code.trim() !== "") {
-            window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(code);
+            window.open("https://www.google.com/search?q=" + encodeURIComponent(code), "_blank");
         }
     }
 }
