@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Opener</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
 
+<body>
+    <div class="main-content">
+    <header>
+        <h1>Open Portal ID</h1>
+    </header>
+
+    <div class="container">
+        <input type="text" id="codeInput" placeholder="Enter Portal ID" onkeydown="handleKeyPress(event)">
+    </div>
+
+    <div class="container">
+        <button class="btn Map" onclick="redirectToMap()">Project Map</button>
+        <button class="btn BOM" onclick="openBOM()">Project BOM</button>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <a href="../index.html">Open Project in a new tab</a>
+    </footer>
+
+    <script src="original.js"></script>
+</body>
+
+</html>
